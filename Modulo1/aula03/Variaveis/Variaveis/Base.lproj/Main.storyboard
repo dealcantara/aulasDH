@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Variaveis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCc-xu-Ona">
+                                <rect key="frame" x="30" y="443" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h33-47-QeR">
+                                <rect key="frame" x="30" y="782" width="354" height="40"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jx5-8Y-sEV"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tabAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1s8-Z6-cy5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peso" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vqO-3z-UQC">
+                                <rect key="frame" x="50" y="120" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Altura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mW6-eU-Hrf">
+                                <rect key="frame" x="50" y="171" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h33-47-QeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0Ji-Rt-bqg"/>
+                            <constraint firstItem="GCc-xu-Ona" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2FN-AA-fCu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vqO-3z-UQC" secondAttribute="trailing" constant="50" id="3hy-Mg-nEV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mW6-eU-Hrf" secondAttribute="trailing" constant="50" id="5Mp-oz-Ng7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h33-47-QeR" secondAttribute="trailing" constant="30" id="9x0-vM-W21"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h33-47-QeR" secondAttribute="bottom" constant="40" id="GDY-3y-QKc"/>
+                            <constraint firstItem="mW6-eU-Hrf" firstAttribute="top" secondItem="vqO-3z-UQC" secondAttribute="bottom" constant="17" id="JSq-az-d3W"/>
+                            <constraint firstItem="mW6-eU-Hrf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Qg3-kw-ynR"/>
+                            <constraint firstItem="h33-47-QeR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XoW-fr-8Ya"/>
+                            <constraint firstItem="GCc-xu-Ona" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="YKx-Zd-kNC"/>
+                            <constraint firstItem="vqO-3z-UQC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="aW6-An-RuM"/>
+                            <constraint firstItem="vqO-3z-UQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="cvf-d1-ME2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GCc-xu-Ona" secondAttribute="trailing" constant="30" id="qht-lC-gpN"/>
+                            <constraint firstItem="GCc-xu-Ona" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uMu-Nn-03d"/>
+                            <constraint firstItem="mW6-eU-Hrf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vso-aB-9qq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="h33-47-QeR" id="LeW-EZ-OOa"/>
+                        <outlet property="heightTextField" destination="mW6-eU-Hrf" id="hNT-0B-XHf"/>
+                        <outlet property="nameLabel" destination="GCc-xu-Ona" id="O9n-rJ-u1Z"/>
+                        <outlet property="weightTextField" destination="vqO-3z-UQC" id="cCd-iD-Kj8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
