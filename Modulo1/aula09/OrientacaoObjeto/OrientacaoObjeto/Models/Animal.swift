@@ -32,16 +32,17 @@ class Animal {
     }
     
     
-    struct Animal2 {
-        
-        var tamanho: String?
-        var raca: String?
-        var cor: String?
-        var qtdPatas: Int?
-        var genero: String?
-        var especie: String?
-        var idade: Int?
-        
-    }
+}
+
+
+struct Animal2 {
+    
+    var tamanho: String?
+    var raca: String?
+    var cor: String?
+    var qtdPatas: Int?
+    var genero: String?
+    var especie: String?
+    var idade: Int?
     
 }

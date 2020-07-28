@@ -50,7 +50,6 @@
 		54C824A724CF97CE0079D020 = {
 			isa = PBXGroup;
 			children = (
-				545C756D24CFA64B00041F89 /* Models */,
 				54C824B224CF97CE0079D020 /* OrientacaoObjeto */,
 				54C824B124CF97CE0079D020 /* Products */,
 			);
@@ -67,6 +66,7 @@
 		54C824B224CF97CE0079D020 /* OrientacaoObjeto */ = {
 			isa = PBXGroup;
 			children = (
+				545C756D24CFA64B00041F89 /* Models */,
 				54C824B324CF97CE0079D020 /* AppDelegate.swift */,
 				54C824B524CF97CE0079D020 /* SceneDelegate.swift */,
 				54C824B724CF97CE0079D020 /* ViewController.swift */,
