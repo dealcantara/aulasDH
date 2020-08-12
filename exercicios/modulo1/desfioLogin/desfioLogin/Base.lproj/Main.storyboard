@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="desfioLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTT-ns-7IC">
+                                <rect key="frame" x="90" y="144" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uuc-fS-X8u">
+                                <rect key="frame" x="90" y="198" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKh-8F-Xi4">
+                                <rect key="frame" x="90" y="262" width="234" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PaC-hK-cRx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-K6-zC7">
+                                <rect key="frame" x="90" y="302" width="234" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedCadastrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WbJ-kY-8QH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S7U-K6-zC7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Cz-Fi-Acn"/>
+                            <constraint firstItem="eTT-ns-7IC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="22T-pU-6ts"/>
+                            <constraint firstItem="Uuc-fS-X8u" firstAttribute="top" secondItem="eTT-ns-7IC" secondAttribute="bottom" constant="20" id="3pz-D8-lxm"/>
+                            <constraint firstItem="Uuc-fS-X8u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="5lV-a4-6aC"/>
+                            <constraint firstItem="qKh-8F-Xi4" firstAttribute="top" secondItem="Uuc-fS-X8u" secondAttribute="bottom" constant="30" id="7D5-YK-P5M"/>
+                            <constraint firstItem="S7U-K6-zC7" firstAttribute="top" secondItem="qKh-8F-Xi4" secondAttribute="bottom" constant="20" id="D9v-fb-ND8"/>
+                            <constraint firstItem="qKh-8F-Xi4" firstAttribute="top" secondItem="Uuc-fS-X8u" secondAttribute="bottom" constant="30" id="E0B-ca-Ucn"/>
+                            <constraint firstItem="qKh-8F-Xi4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="Jsu-AQ-Sbx"/>
+                            <constraint firstItem="qKh-8F-Xi4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Lfu-C5-Hi9"/>
+                            <constraint firstItem="eTT-ns-7IC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="UXO-gm-CBe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S7U-K6-zC7" secondAttribute="trailing" constant="90" id="XTO-7O-Pyc"/>
+                            <constraint firstItem="S7U-K6-zC7" firstAttribute="top" secondItem="qKh-8F-Xi4" secondAttribute="bottom" constant="10" id="Zbq-S8-d3L"/>
+                            <constraint firstItem="eTT-ns-7IC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="aSC-Ga-FAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eTT-ns-7IC" secondAttribute="trailing" constant="90" id="dfR-nv-hSQ"/>
+                            <constraint firstItem="Uuc-fS-X8u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e0s-gn-xYo"/>
+                            <constraint firstItem="S7U-K6-zC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="k6c-Kd-FCt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qKh-8F-Xi4" secondAttribute="trailing" constant="90" id="lFc-d4-3aI"/>
+                            <constraint firstItem="Uuc-fS-X8u" firstAttribute="top" secondItem="eTT-ns-7IC" secondAttribute="bottom" constant="20" id="lZe-ay-XbN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uuc-fS-X8u" secondAttribute="trailing" constant="90" id="xz5-db-ZUh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cadastrarButton" destination="S7U-K6-zC7" id="AKe-Cj-DPb"/>
+                        <outlet property="loginButton" destination="qKh-8F-Xi4" id="0K3-xS-9by"/>
+                        <outlet property="loginTextField" destination="eTT-ns-7IC" id="yBH-4W-ek8"/>
+                        <outlet property="senhaTextField" destination="Uuc-fS-X8u" id="JlJ-Fu-dGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
