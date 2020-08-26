@@ -9,13 +9,6 @@
 import UIKit
 
 
-struct Produto {
-    
-    var produto: String
-    var preco: String
-    
-}
-
 protocol AddViewControllerProtocol: class {
     
     func successAssProduto(array: [Produto])
@@ -53,7 +46,7 @@ class AddViewController: UIViewController {
         
         if _produto != "" && _preco != "" {
             
-            self.listaProdutos.append(Produto(produto: _produto, preco: _preco))
+            self.listaProdutos.append(Produto(nome: _produto, preco: _preco, categoria: .limpeza))
             
             print(listaProdutos)
             

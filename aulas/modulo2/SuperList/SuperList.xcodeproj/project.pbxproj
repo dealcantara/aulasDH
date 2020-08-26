@@ -14,6 +14,7 @@
 		540CF2B924EF2CFB003C0AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540CF2B824EF2CFB003C0AA9 /* Assets.xcassets */; };
 		540CF2BC24EF2CFB003C0AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540CF2BA24EF2CFB003C0AA9 /* LaunchScreen.storyboard */; };
 		540CF2C424EF33A5003C0AA9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540CF2C324EF33A5003C0AA9 /* AddViewController.swift */; };
+		54D5663724F5E5C5002B06F0 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5663624F5E5C5002B06F0 /* Produto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		540CF2BB24EF2CFB003C0AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		540CF2BD24EF2CFB003C0AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540CF2C324EF33A5003C0AA9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		54D5663624F5E5C5002B06F0 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				540CF2B124EF2CF7003C0AA9 /* SceneDelegate.swift */,
 				540CF2B324EF2CF7003C0AA9 /* ViewController.swift */,
 				540CF2C324EF33A5003C0AA9 /* AddViewController.swift */,
+				54D5663624F5E5C5002B06F0 /* Produto.swift */,
 				540CF2B524EF2CF8003C0AA9 /* Main.storyboard */,
 				540CF2B824EF2CFB003C0AA9 /* Assets.xcassets */,
 				540CF2BA24EF2CFB003C0AA9 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				540CF2B424EF2CF7003C0AA9 /* ViewController.swift in Sources */,
 				540CF2B024EF2CF7003C0AA9 /* AppDelegate.swift in Sources */,
 				540CF2C424EF33A5003C0AA9 /* AddViewController.swift in Sources */,
+				54D5663724F5E5C5002B06F0 /* Produto.swift in Sources */,
 				540CF2B224EF2CF7003C0AA9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
