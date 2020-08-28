@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func clicouAddButton(_ sender: UIBarButtonItem) {
         
         self.performSegue(withIdentifier: "addViewController", sender: nil)
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -88,14 +90,31 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        print("Row \(indexPath.row) selected")
+        
+
+        let cell:UITableViewCell? = (tableView.cellForRow(at: indexPath) ?? UITableViewCell()) as UITableViewCell
+//        cell?.backgroundColor = UIColor.red
+        
+        if cell?.accessoryType == .checkmark {
+            cell?.accessoryType = .none
+        }else{
+            cell?.accessoryType = .checkmark
+        }
+    }
+    
     
 }
 
 extension ViewController: AddViewControllerProtocol {
     func successAssProduto(array: [Produto]) {
         
+        self.arrayProdutos = array
+        self.listTableVIew.reloadData()
     }
     
-   
     
 }

@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="ykq-xH-ERZ" detailTextLabel="GG1-Hv-J42" style="IBUITableViewCellStyleSubtitle" id="kUW-qp-0bD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="ykq-xH-ERZ" detailTextLabel="GG1-Hv-J42" style="IBUITableViewCellStyleSubtitle" id="kUW-qp-0bD">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kUW-qp-0bD" id="AXy-B1-tR9">
@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="OSM-Ya-JqA">
-                                <rect key="frame" x="20" y="141" width="374" height="166"/>
+                                <rect key="frame" x="20" y="141" width="374" height="231"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Produto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-Af-FEP">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -94,8 +94,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bL6-2d-g3m">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="32"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <segments>
+                                            <segment title="Alimentos"/>
+                                            <segment title="Limpeza"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="tappedCadastrarButton:" destination="AnT-wp-d03" eventType="valueChanged" id="reI-3c-IHW"/>
+                                        </connections>
+                                    </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wt6-pA-MaG">
-                                        <rect key="frame" x="0.0" y="136" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="201" width="374" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Cadastrar">
@@ -120,6 +131,7 @@
                     <navigationItem key="navigationItem" title="Produto" id="Whm-0S-5nq"/>
                     <connections>
                         <outlet property="cadastrarButton" destination="Wt6-pA-MaG" id="KuT-UR-5VY"/>
+                        <outlet property="categoriaSegmentedControl" destination="bL6-2d-g3m" id="NBN-wP-hF3"/>
                         <outlet property="precoTextField" destination="hEc-aX-WsN" id="4bh-pc-i0c"/>
                         <outlet property="produtoTextField" destination="gEB-Af-FEP" id="r7v-it-EhA"/>
                     </connections>

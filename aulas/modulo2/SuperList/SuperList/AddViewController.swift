@@ -16,16 +16,17 @@ protocol AddViewControllerProtocol: class {
 }
 
 
-
 class AddViewController: UIViewController {
     
     @IBOutlet weak var produtoTextField: UITextField!
     @IBOutlet weak var precoTextField: UITextField!
     @IBOutlet weak var cadastrarButton: UIButton!
+    @IBOutlet weak var categoriaSegmentedControl: UISegmentedControl!
     
     weak var delegate: AddViewControllerProtocol?
     
     private var listaProdutos: [Produto] = []
+    private var categoriaSelected: Categoria = .alimento
     
     
     
@@ -38,6 +39,18 @@ class AddViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func tappedCadastrarButton(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            self.categoriaSelected = .alimento
+        }else {
+            self.categoriaSelected = .limpeza
+        }
+        print(sender.selectedSegmentIndex)
+    }
+    
+
+    
     @IBAction func cadatrarButton(_ sender: Any) {
                 
         let _produto: String = self.produtoTextField.text ?? ""
@@ -46,12 +59,13 @@ class AddViewController: UIViewController {
         
         if _produto != "" && _preco != "" {
             
-            self.listaProdutos.append(Produto(nome: _produto, preco: _preco, categoria: .limpeza))
+            self.listaProdutos.append(Produto(nome: _produto, preco: _preco, categoria: self.categoriaSelected))
             
-            print(listaProdutos)
+//            print(listaProdutos)
             
             self.produtoTextField.text = nil
             self.precoTextField.text = nil
+            self.categoriaSegmentedControl.selectedSegmentIndex = 0
             
             self.delegate?.successAssProduto(array: self.listaProdutos)
             
