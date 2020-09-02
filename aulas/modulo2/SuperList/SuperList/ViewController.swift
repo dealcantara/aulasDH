@@ -107,12 +107,44 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    
+    
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            switch indexPath.section {
+            case 0:
+                var array = self.arrayProdutos.filter({$0.categoria == .alimento})
+                array.remove(at: indexPath.row)
+                self.arrayProdutos = self.arrayProdutos.filter({$0.categoria != .alimento})
+                self.arrayProdutos += array
+            
+            case 1:
+            var array = self.arrayProdutos.filter({$0.categoria == .limpeza})
+            self.arrayProdutos = self.arrayProdutos.filter({$0.categoria != .limpeza})
+            array.remove(at: indexPath.row)
+                self.arrayProdutos += array
+            
+            default:
+                break
+            }
+            
+            
+            self.listTableVIew.reloadData()
+            
+        }
+    }
+    
 }
 
 extension ViewController: AddViewControllerProtocol {
     func successAssProduto(array: [Produto]) {
         
-        self.arrayProdutos = array
+        self.arrayProdutos += array
         self.listTableVIew.reloadData()
     }
     
