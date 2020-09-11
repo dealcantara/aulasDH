@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="datePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-hv-gyz">
+                                <rect key="frame" x="20" y="70" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wgb-7h-5hD">
+                                <rect key="frame" x="20" y="130" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="jgG-0d-xlo">
+                                <rect key="frame" x="0.0" y="205" width="414" height="216"/>
+                                <connections>
+                                    <action selector="tappedMyDatePiker:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z23-ez-3Fs"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-YI-p4T">
+                                <rect key="frame" x="20" y="442" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdJ-8i-OeU">
+                                <rect key="frame" x="20" y="480" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIg-6Q-5d9">
+                                <rect key="frame" x="20" y="517" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wgb-7h-5hD" secondAttribute="trailing" constant="20" id="30f-kU-IPU"/>
+                            <constraint firstItem="Wgb-7h-5hD" firstAttribute="top" secondItem="D3e-hv-gyz" secondAttribute="bottom" constant="26" id="CoC-6I-swa"/>
+                            <constraint firstItem="D3e-hv-gyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="DIy-1b-RIi"/>
+                            <constraint firstItem="jgG-0d-xlo" firstAttribute="top" secondItem="Wgb-7h-5hD" secondAttribute="bottom" constant="41" id="QEP-Ut-sLL"/>
+                            <constraint firstItem="D3e-hv-gyz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TFB-Co-Pd8"/>
+                            <constraint firstItem="jgG-0d-xlo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uyc-dn-pWO"/>
+                            <constraint firstItem="Wgb-7h-5hD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YRc-bt-vgR"/>
+                            <constraint firstItem="Wgb-7h-5hD" firstAttribute="top" secondItem="D3e-hv-gyz" secondAttribute="bottom" constant="26" id="e9X-ea-F6R"/>
+                            <constraint firstItem="jgG-0d-xlo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g34-gg-pyy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3e-hv-gyz" secondAttribute="trailing" constant="20" id="iQg-H7-qBQ"/>
+                            <constraint firstItem="jgG-0d-xlo" firstAttribute="top" secondItem="Wgb-7h-5hD" secondAttribute="bottom" constant="41" id="tTF-Ge-ZoC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="dIg-6Q-5d9" id="Fb0-gf-6WD"/>
+                        <outlet property="datePicker" destination="jgG-0d-xlo" id="x3q-6a-D2A"/>
+                        <outlet property="nameTextField" destination="D3e-hv-gyz" id="icm-2E-c1n"/>
+                        <outlet property="nomeLabel" destination="cW9-YI-p4T" id="FZS-I3-AX2"/>
+                        <outlet property="phoneLabel" destination="qdJ-8i-OeU" id="zcy-jc-aQ9"/>
+                        <outlet property="phoneTextField" destination="Wgb-7h-5hD" id="pqJ-5s-xPZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
