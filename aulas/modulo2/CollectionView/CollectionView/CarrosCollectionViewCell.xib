@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarrosCollectionViewCell" id="gTV-IL-0wX" customClass="CarrosCollectionViewCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="300"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYf-vL-eKv">
+                        <rect key="frame" x="20" y="10" width="240" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jox-oc-FyX">
+                        <rect key="frame" x="0.0" y="86" width="280" height="214"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="280" id="4Lk-2F-Hkt"/>
+                            <constraint firstAttribute="height" constant="214" id="S4I-MB-ryT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-Vm-hGI">
+                        <rect key="frame" x="20" y="42" width="240" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Hal-Vm-hGI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="7WW-us-rV5"/>
+                <constraint firstItem="VYf-vL-eKv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Alh-OC-MqL"/>
+                <constraint firstAttribute="trailing" secondItem="VYf-vL-eKv" secondAttribute="trailing" constant="20" id="ELD-fy-auP"/>
+                <constraint firstAttribute="bottom" secondItem="jox-oc-FyX" secondAttribute="bottom" id="IaT-uz-k2e"/>
+                <constraint firstItem="jox-oc-FyX" firstAttribute="top" secondItem="Hal-Vm-hGI" secondAttribute="bottom" constant="23" id="Wqn-X7-Kw1"/>
+                <constraint firstAttribute="trailing" secondItem="jox-oc-FyX" secondAttribute="trailing" id="ZQl-gi-RcI"/>
+                <constraint firstItem="Hal-Vm-hGI" firstAttribute="top" secondItem="VYf-vL-eKv" secondAttribute="bottom" constant="11" id="rdU-3F-5cT"/>
+                <constraint firstItem="VYf-vL-eKv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="v5w-d5-Y9J"/>
+                <constraint firstItem="jox-oc-FyX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="voN-us-zFU"/>
+                <constraint firstAttribute="trailing" secondItem="Hal-Vm-hGI" secondAttribute="trailing" constant="20" id="xhe-lY-DR3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="283" height="249"/>
+            <connections>
+                <outlet property="anoLabel" destination="Hal-Vm-hGI" id="DE5-1a-wXO"/>
+                <outlet property="carroImageView" destination="jox-oc-FyX" id="qBU-V6-a3B"/>
+                <outlet property="modeloLabel" destination="VYf-vL-eKv" id="DTQ-hW-Fnd"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="39.508928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
