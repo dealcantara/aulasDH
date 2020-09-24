@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="datePickerReview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="71L-r8-Ere">
+                                <rect key="frame" x="0.0" y="177" width="414" height="216"/>
+                                <connections>
+                                    <action selector="setDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="pr7-qf-2Sg"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantos anos você tem?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ju-Qa-kec">
+                                <rect key="frame" x="20" y="438" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0ju-Qa-kec" firstAttribute="top" secondItem="71L-r8-Ere" secondAttribute="bottom" constant="45" id="HTP-FC-w1r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ju-Qa-kec" secondAttribute="trailing" constant="20" id="HW8-ty-T1E"/>
+                            <constraint firstItem="0ju-Qa-kec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IcX-Qf-Rr1"/>
+                            <constraint firstItem="71L-r8-Ere" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9O-8P-xnA"/>
+                            <constraint firstItem="71L-r8-Ere" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="bg0-2R-WVc"/>
+                            <constraint firstItem="0ju-Qa-kec" firstAttribute="top" secondItem="71L-r8-Ere" secondAttribute="bottom" constant="45" id="iMW-cH-Yc0"/>
+                            <constraint firstItem="71L-r8-Ere" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ifu-9I-AMc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myDatePicker" destination="71L-r8-Ere" id="Kew-kK-eaq"/>
+                        <outlet property="myLabel" destination="0ju-Qa-kec" id="4dl-RO-7NW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChallengePickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-A7-FhL">
+                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unj-Kb-66U">
+                                <rect key="frame" x="20" y="188" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <state key="normal" title="adicionar">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hv0-tl-Lw7"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WtV-TP-7pg">
+                                <rect key="frame" x="0.0" y="367" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJ8-A7-FhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Zp-az-XAt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="unj-Kb-66U" secondAttribute="trailing" constant="20" id="9S3-PX-gJf"/>
+                            <constraint firstItem="WtV-TP-7pg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eo8-Un-TdE"/>
+                            <constraint firstItem="unj-Kb-66U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RHJ-0w-FqD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gJ8-A7-FhL" secondAttribute="trailing" constant="20" id="eaa-Ec-5EM"/>
+                            <constraint firstItem="unj-Kb-66U" firstAttribute="top" secondItem="gJ8-A7-FhL" secondAttribute="bottom" constant="20" id="fsm-aU-1Cf"/>
+                            <constraint firstItem="gJ8-A7-FhL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="oyy-b6-bDE"/>
+                            <constraint firstItem="WtV-TP-7pg" firstAttribute="top" secondItem="unj-Kb-66U" secondAttribute="bottom" constant="149" id="pSN-da-KK7"/>
+                            <constraint firstItem="WtV-TP-7pg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="twB-FB-Pks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adicionarButton" destination="unj-Kb-66U" id="lAQ-Jh-Hmg"/>
+                        <outlet property="pickerView" destination="WtV-TP-7pg" id="kOd-90-2aH"/>
+                        <outlet property="valorTextField" destination="gJ8-A7-FhL" id="pSP-C6-haF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
