@@ -73,6 +73,9 @@ class AddViewController: UIViewController {
             self.precoTextField.text = nil
             self.categoriaSegmentedControl.selectedSegmentIndex = 0
             
+            let nc = NotificationCenter.default
+            nc.post(name: Notification.Name("cadastrouProduto"), object: self.listaProdutos)
+            
             self.delegate?.successAssProduto(array: self.listaProdutos)
             
         }

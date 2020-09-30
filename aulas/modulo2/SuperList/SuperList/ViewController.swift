@@ -23,7 +23,27 @@ class ViewController: UIViewController {
         self.listTableVIew.dataSource = self
         //        self.listTableVIew.separatorStyle = .none
         
+        
+        
+//        let addView: AddViewController?
+//        addView = tabBarController?.viewControllers![1] as? AddViewController
+//        addView?.delegate = self
+        
+        let nc = NotificationCenter.default
+        nc.addObserver(self, selector: #selector(updateList(_:)), name: Notification.Name("cadastrouProduto"), object: nil)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func updateList (_ notification: Notification) {
+        
+        let array: [Produto]? = notification.object as? [Produto]
+        
+        print(array)
+        
+        self.arrayProdutos += array ?? []
+        self.listTableVIew.reloadData()
+        
     }
     
     
@@ -142,6 +162,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 extension ViewController: AddViewControllerProtocol {
+    
     func successAssProduto(array: [Produto]) {
         
         self.arrayProdutos += array
