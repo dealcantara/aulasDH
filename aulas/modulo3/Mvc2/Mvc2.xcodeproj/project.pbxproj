@@ -28,7 +28,7 @@
 		54A05BC1252FCA0A007034B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A05BC4252FCA0A007034B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54A05BC6252FCA0A007034B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54A05BCE252FCAAB007034B3 /* contatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = contatos.json; path = ../../../../../../Downloads/contatos.json; sourceTree = "<group>"; };
+		54A05BCE252FCAAB007034B3 /* contatos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contatos.json; sourceTree = "<group>"; };
 		54A05BD3252FCB1E007034B3 /* ContatosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosController.swift; sourceTree = "<group>"; };
 		54A05BD7252FCB82007034B3 /* ContatosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosWorker.swift; sourceTree = "<group>"; };
 		54A05BDB252FCC50007034B3 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
