@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myDatePicker: UIDatePicker!
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var weeksLabel: UILabel!
+    @IBOutlet weak var daysLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -20,7 +22,18 @@ class ViewController: UIViewController {
         
         myDatePicker.maximumDate = Calendar.current.date(byAdding: .day, value: 0, to: Date())
         
+        
     }
+    
+    func daysBetweenDates( initialDate: Date) -> Int {
+        let calendar: Calendar = Calendar.current
+        let date1 = calendar.startOfDay(for: initialDate)
+        let date2 = calendar.startOfDay(for: Date())
+        return calendar.dateComponents([.day], from: date1, to: date2).day!
+    }
+
+
+
     
     @IBAction func setDate(_ sender: UIDatePicker) {
         
@@ -33,8 +46,6 @@ class ViewController: UIViewController {
         let timeInterval = birthday?.timeIntervalSinceNow
         let age = abs(Int(timeInterval! / 31556926.0))
         
-        print(age)
-        
         
         if age > 1 {
             self.myLabel.text = String(age) + " anos"
@@ -45,6 +56,11 @@ class ViewController: UIViewController {
         }
         
         
+        let sumDays: Int = daysBetweenDates(initialDate: birthday!)
+        
+        self.weeksLabel.text = String(sumDays / 7) + " SEMANAS"
+        self.daysLabel.text = String(sumDays % 7) + " DIAS"
+        print(sumDays)
         
         
     }

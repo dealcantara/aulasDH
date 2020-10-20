@@ -38,6 +38,20 @@ class ListaCarrosController {
         
     }
     
+    
+    private var carroSorteado: Carro?
+    
+    var modeloCarroSorteado: String? {
+        return self.carroSorteado?.modelo
+    }
+    var anoCarroSorteado: String? {
+        return "\(self.carroSorteado?.ano ?? 0)"
+    }
+    var corCarroSorteado: String? {
+        return self.carroSorteado?.cor
+    }
+    
+    
     func sortearCarro() -> String {
         
         let sorteado: Carro = self.arrayCarros.randomElement() ?? Carro(modelo: "", ano: 0, cor: "")
@@ -45,6 +59,8 @@ class ListaCarrosController {
         let modelo: String = sorteado.modelo ?? ""
         let ano: Int = sorteado.ano ?? 0
         let cor: String = sorteado.cor ?? ""
+        
+        self.carroSorteado = sorteado
         
         return "\(modelo), \(ano), \(cor)"
     }

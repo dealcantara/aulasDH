@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,22 +29,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRw-tU-2x4">
+                                <rect key="frame" x="20" y="507" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haO-b4-MWl">
+                                <rect key="frame" x="20" y="548" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qRw-tU-2x4" firstAttribute="top" secondItem="0ju-Qa-kec" secondAttribute="bottom" constant="48" id="8qJ-F6-yTK"/>
                             <constraint firstItem="0ju-Qa-kec" firstAttribute="top" secondItem="71L-r8-Ere" secondAttribute="bottom" constant="45" id="HTP-FC-w1r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ju-Qa-kec" secondAttribute="trailing" constant="20" id="HW8-ty-T1E"/>
                             <constraint firstItem="0ju-Qa-kec" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IcX-Qf-Rr1"/>
+                            <constraint firstItem="haO-b4-MWl" firstAttribute="top" secondItem="qRw-tU-2x4" secondAttribute="bottom" constant="20" id="M0C-Nr-LJc"/>
                             <constraint firstItem="71L-r8-Ere" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9O-8P-xnA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qRw-tU-2x4" secondAttribute="trailing" constant="20" id="Vn0-f4-abu"/>
+                            <constraint firstItem="qRw-tU-2x4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="acZ-2f-Z2W"/>
                             <constraint firstItem="71L-r8-Ere" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="bg0-2R-WVc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="haO-b4-MWl" secondAttribute="trailing" constant="20" id="dTg-eS-bGk"/>
+                            <constraint firstItem="haO-b4-MWl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e1n-Po-99v"/>
                             <constraint firstItem="0ju-Qa-kec" firstAttribute="top" secondItem="71L-r8-Ere" secondAttribute="bottom" constant="45" id="iMW-cH-Yc0"/>
                             <constraint firstItem="71L-r8-Ere" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ifu-9I-AMc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="daysLabel" destination="haO-b4-MWl" id="r9w-9G-hmw"/>
                         <outlet property="myDatePicker" destination="71L-r8-Ere" id="Kew-kK-eaq"/>
                         <outlet property="myLabel" destination="0ju-Qa-kec" id="4dl-RO-7NW"/>
+                        <outlet property="weeksLabel" destination="qRw-tU-2x4" id="34Y-tu-V6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -50,4 +72,9 @@
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -8,11 +8,11 @@
 import UIKit
 
 class ListaCarrosVC: UIViewController {
-    
+        
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var resultadoLabel: UILabel!
     
-    let controller: ListaCarrosController = ListaCarrosController()
+    var controller: ListaCarrosController = ListaCarrosController()
     
         
     override func viewDidLoad() {
@@ -26,8 +26,19 @@ class ListaCarrosVC: UIViewController {
     @IBAction func clicouSortearButton(_ sender: Any) {
         
         self.resultadoLabel.text = self.controller.sortearCarro()
+        self.performSegue(withIdentifier: "ResultadoVC", sender: nil)
+        
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        let vc: ResultadoVC? = segue.destination as? ResultadoVC
+        vc?.controller = self.controller
+
+    }
+    
+
     
 }
 

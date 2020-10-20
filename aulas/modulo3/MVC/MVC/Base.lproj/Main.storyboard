@@ -54,6 +54,7 @@
                                 <state key="normal" title="Sortear"/>
                                 <connections>
                                     <action selector="clicouSortearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S6Z-7t-jjS"/>
+                                    <segue destination="tdB-2A-gnq" kind="showDetail" identifier="ResultadoVC" id="TOf-ve-qDD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toquem em &quot;Sortear&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heh-n3-ZJe">
@@ -78,6 +79,7 @@
                             <constraint firstItem="heh-n3-ZJe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dbN-bE-bTy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GBE-G4-TT2"/>
                     <connections>
                         <outlet property="listTableView" destination="bsH-tc-VdX" id="B3k-yy-6VC"/>
                         <outlet property="resultadoLabel" destination="heh-n3-ZJe" id="fWm-UC-c8j"/>
@@ -86,6 +88,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="114.50892857142857"/>
+        </scene>
+        <!--ResultadoVC-->
+        <scene sceneID="lHd-7t-4ya">
+            <objects>
+                <viewController id="tdB-2A-gnq" customClass="ResultadoVC" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="man-bn-jP9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn9-Uc-kVa">
+                                <rect key="frame" x="20" y="386" width="374" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmW-a4-BPs">
+                                <rect key="frame" x="347" y="20" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fechar"/>
+                                <connections>
+                                    <action selector="clicouFechar:" destination="tdB-2A-gnq" eventType="touchUpInside" id="aoW-Ub-a4N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d1B-Rt-4Oq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d1B-Rt-4Oq" firstAttribute="trailing" secondItem="gn9-Uc-kVa" secondAttribute="trailing" constant="20" id="EO6-Eu-pxG"/>
+                            <constraint firstItem="gn9-Uc-kVa" firstAttribute="leading" secondItem="d1B-Rt-4Oq" secondAttribute="leading" constant="20" id="oEp-po-Njd"/>
+                            <constraint firstItem="d1B-Rt-4Oq" firstAttribute="bottom" secondItem="gn9-Uc-kVa" secondAttribute="bottom" constant="351" id="vFc-Tg-c4S"/>
+                            <constraint firstItem="gn9-Uc-kVa" firstAttribute="top" secondItem="d1B-Rt-4Oq" secondAttribute="top" constant="386" id="zgM-25-VFd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EId-iK-RVE"/>
+                    <connections>
+                        <outlet property="resultadoLabel" destination="gn9-Uc-kVa" id="Eqb-jL-bdf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F3l-jA-wHM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="126.5625"/>
         </scene>
     </scenes>
     <resources>
