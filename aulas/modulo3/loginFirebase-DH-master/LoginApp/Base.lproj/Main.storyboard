@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lc0-4L-dqA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register UserVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="registerUserVC" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-Yv-bxm">
+                                <rect key="frame" x="20" y="282" width="374" height="248"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastrar-se" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjU-cv-V3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1O-n6-jOd">
+                                        <rect key="frame" x="0.0" y="66" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zu2-hf-eHh">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTJ-PJ-Jze">
+                                        <rect key="frame" x="0.0" y="206" width="374" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tappedRegisterUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Laf-UD-gQi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zu2-hf-eHh" firstAttribute="leading" secondItem="YI7-Yv-bxm" secondAttribute="leading" id="6qB-dG-TaM"/>
+                                    <constraint firstAttribute="trailing" secondItem="o1O-n6-jOd" secondAttribute="trailing" id="BdQ-Yn-IpA"/>
+                                    <constraint firstItem="oTJ-PJ-Jze" firstAttribute="leading" secondItem="YI7-Yv-bxm" secondAttribute="leading" id="O2T-Tr-gKq"/>
+                                    <constraint firstAttribute="trailing" secondItem="zu2-hf-eHh" secondAttribute="trailing" id="VF3-BL-qd1"/>
+                                    <constraint firstAttribute="trailing" secondItem="oTJ-PJ-Jze" secondAttribute="trailing" id="i6X-Qa-9Tb"/>
+                                    <constraint firstItem="o1O-n6-jOd" firstAttribute="leading" secondItem="YI7-Yv-bxm" secondAttribute="leading" id="ioP-WI-8Oz"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Euu-Qk-HRk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="252"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="S6v-y1-3um"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Euu-Qk-HRk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Og-5q-avT"/>
+                            <constraint firstItem="YI7-Yv-bxm" firstAttribute="top" secondItem="Euu-Qk-HRk" secondAttribute="bottom" constant="30" id="3WO-wP-xBA"/>
+                            <constraint firstItem="Euu-Qk-HRk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="581-cN-iWC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YI7-Yv-bxm" secondAttribute="trailing" constant="20" id="TVp-b2-jLu"/>
+                            <constraint firstItem="Euu-Qk-HRk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hx0-K8-ndb"/>
+                            <constraint firstItem="YI7-Yv-bxm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z4v-zH-UAB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="o1O-n6-jOd" id="XY6-Sw-Wsb"/>
+                        <outlet property="passwordTextField" destination="zu2-hf-eHh" id="Tfn-2b-OTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="112"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jcf-py-VF5">
+            <objects>
+                <viewController id="lc0-4L-dqA" customClass="ViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9nf-Eg-poW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-rH-y36">
+                                <rect key="frame" x="20" y="282" width="374" height="326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kix-2s-bOG">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemTealColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8w-Ku-EZG">
+                                        <rect key="frame" x="0.0" y="66" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uwx-sj-SCw">
+                                        <rect key="frame" x="0.0" y="136" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ova-G1-uzX">
+                                        <rect key="frame" x="0.0" y="206" width="374" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALz-af-XLY">
+                                        <rect key="frame" x="0.0" y="284" width="374" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                        <state key="normal" title="Cadastre-se">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="dZY-o8-0Qn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uwx-sj-SCw" firstAttribute="leading" secondItem="xhj-rH-y36" secondAttribute="leading" id="31u-9R-jXM"/>
+                                    <constraint firstItem="Ova-G1-uzX" firstAttribute="leading" secondItem="xhj-rH-y36" secondAttribute="leading" id="9Qc-3B-nYN"/>
+                                    <constraint firstItem="ALz-af-XLY" firstAttribute="leading" secondItem="xhj-rH-y36" secondAttribute="leading" id="ElI-Jp-Zaq"/>
+                                    <constraint firstAttribute="trailing" secondItem="uwx-sj-SCw" secondAttribute="trailing" id="Jjf-rU-3IK"/>
+                                    <constraint firstItem="h8w-Ku-EZG" firstAttribute="leading" secondItem="xhj-rH-y36" secondAttribute="leading" id="Tpg-ta-p8T"/>
+                                    <constraint firstAttribute="trailing" secondItem="h8w-Ku-EZG" secondAttribute="trailing" id="aZ8-cd-pbE"/>
+                                    <constraint firstAttribute="trailing" secondItem="ALz-af-XLY" secondAttribute="trailing" id="nCw-HI-l7J"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ova-G1-uzX" secondAttribute="trailing" id="pdB-QA-0de"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BoL-iv-Abd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="252"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="0yJ-QV-aaI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jcZ-Jp-IYf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BoL-iv-Abd" firstAttribute="top" secondItem="9nf-Eg-poW" secondAttribute="top" id="6w6-8a-MI7"/>
+                            <constraint firstItem="xhj-rH-y36" firstAttribute="top" secondItem="BoL-iv-Abd" secondAttribute="bottom" constant="30" id="8Rg-O2-lng"/>
+                            <constraint firstItem="jcZ-Jp-IYf" firstAttribute="trailing" secondItem="xhj-rH-y36" secondAttribute="trailing" constant="20" id="Ieq-uZ-abT"/>
+                            <constraint firstItem="BoL-iv-Abd" firstAttribute="leading" secondItem="jcZ-Jp-IYf" secondAttribute="leading" id="TOR-Cs-941"/>
+                            <constraint firstItem="BoL-iv-Abd" firstAttribute="trailing" secondItem="jcZ-Jp-IYf" secondAttribute="trailing" id="hTW-QK-0fF"/>
+                            <constraint firstItem="xhj-rH-y36" firstAttribute="leading" secondItem="jcZ-Jp-IYf" secondAttribute="leading" constant="20" id="ueb-Uo-h1U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7z-Ja-BGB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="112"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
