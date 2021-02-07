@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Delegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXP-Tv-9Uv">
+                                <rect key="frame" x="30" y="438" width="354" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <state key="normal" title="Vamos para tela 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="irParaTela2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sem-VC-l2T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meo-TI-gpc">
+                                <rect key="frame" x="30" y="538" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="meo-TI-gpc" firstAttribute="top" secondItem="WXP-Tv-9Uv" secondAttribute="bottom" constant="70" id="6W6-e1-vFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="meo-TI-gpc" secondAttribute="trailing" constant="30" id="Bp9-dA-LVy"/>
+                            <constraint firstItem="WXP-Tv-9Uv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FC9-Dw-4Fz"/>
+                            <constraint firstItem="WXP-Tv-9Uv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Lhi-b1-zAT"/>
+                            <constraint firstItem="meo-TI-gpc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qOg-vz-oAZ"/>
+                            <constraint firstItem="meo-TI-gpc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uyP-AJ-kM8"/>
+                            <constraint firstItem="WXP-Tv-9Uv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="vHw-kf-Elm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WXP-Tv-9Uv" secondAttribute="trailing" constant="30" id="w7a-jM-c0T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="meo-TI-gpc" id="M1b-Pu-OXA"/>
+                        <segue destination="tL1-GK-zRO" kind="show" identifier="tela2" id="Yj1-rC-w0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="94"/>
+        </scene>
+        <!--Tela2VC-->
+        <scene sceneID="15a-C7-9kr">
+            <objects>
+                <viewController id="tL1-GK-zRO" customClass="Tela2VC" customModule="Delegate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1i-vl-2Qr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-LC-1Os">
+                                <rect key="frame" x="30" y="389" width="354" height="30"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <state key="normal" title="Voltar para tela 2 e alterar label">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="irParaTela1:" destination="tL1-GK-zRO" eventType="touchUpInside" id="oaW-AE-7Uv"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite o texto para tela 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cP0-pU-i15">
+                                <rect key="frame" x="30" y="489" width="354" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xnG-wd-GKM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cP0-pU-i15" firstAttribute="leading" secondItem="xnG-wd-GKM" secondAttribute="leading" constant="30" id="3BZ-JI-tcY"/>
+                            <constraint firstItem="xnG-wd-GKM" firstAttribute="trailing" secondItem="hVG-LC-1Os" secondAttribute="trailing" constant="30" id="3gg-nP-jFC"/>
+                            <constraint firstItem="hVG-LC-1Os" firstAttribute="centerY" secondItem="xnG-wd-GKM" secondAttribute="centerY" id="Zoh-6a-bzm"/>
+                            <constraint firstItem="hVG-LC-1Os" firstAttribute="leading" secondItem="xnG-wd-GKM" secondAttribute="leading" constant="30" id="d58-Vo-jXg"/>
+                            <constraint firstItem="xnG-wd-GKM" firstAttribute="trailing" secondItem="cP0-pU-i15" secondAttribute="trailing" constant="30" id="dhd-qw-qT7"/>
+                            <constraint firstItem="cP0-pU-i15" firstAttribute="top" secondItem="hVG-LC-1Os" secondAttribute="bottom" constant="70" id="hrb-QJ-pmI"/>
+                            <constraint firstItem="hVG-LC-1Os" firstAttribute="centerX" secondItem="xnG-wd-GKM" secondAttribute="centerX" id="j92-de-eFb"/>
+                            <constraint firstItem="cP0-pU-i15" firstAttribute="centerX" secondItem="xnG-wd-GKM" secondAttribute="centerX" id="rnX-jB-s8a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9bw-ih-Mye"/>
+                    <connections>
+                        <outlet property="myTextField" destination="cP0-pU-i15" id="4Rw-MZ-NYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grX-OX-VLu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

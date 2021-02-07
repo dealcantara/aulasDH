@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vVQ-A2-vn6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Extrato-->
+        <scene sceneID="K5a-ge-QSd">
+            <objects>
+                <viewController id="nfj-7I-Rdd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="521-0K-GD3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhT-th-d2x">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Extrato" id="Q6g-Of-yRZ">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="person.circle" catalog="system" id="9Yg-A9-i8O">
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ya9-yl-bYP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PhT-th-d2x" firstAttribute="trailing" secondItem="ya9-yl-bYP" secondAttribute="trailing" id="1cY-1a-vAh"/>
+                            <constraint firstItem="PhT-th-d2x" firstAttribute="leading" secondItem="ya9-yl-bYP" secondAttribute="leading" id="R08-NM-ckg"/>
+                            <constraint firstItem="PhT-th-d2x" firstAttribute="top" secondItem="ya9-yl-bYP" secondAttribute="top" id="nJZ-D8-DUl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Extrato" image="list.star" catalog="system" id="rWt-rg-aSx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOD-zP-lbn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="919"/>
+        </scene>
+        <!--Cartões-->
+        <scene sceneID="WW4-Ck-VSu">
+            <objects>
+                <viewController id="3W9-E4-CfW" customClass="CardsView" customModule="CardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vu8-L5-ywv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sOJ-Wb-5XF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1Ba-UK-sjV">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Ba-UK-sjV" id="8pU-It-LCa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZo-JM-h59">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Cartões" id="tMi-2k-06a">
+                                        <barButtonItem key="backBarButtonItem" title="Voltar" id="hIb-sP-5kd"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="person.circle" catalog="system" id="ndN-JB-GqG">
+                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kLA-nL-34q"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kLA-nL-34q" firstAttribute="trailing" secondItem="sOJ-Wb-5XF" secondAttribute="trailing" id="D5a-QG-hgq"/>
+                            <constraint firstItem="KZo-JM-h59" firstAttribute="leading" secondItem="kLA-nL-34q" secondAttribute="leading" id="QlC-lh-1Jj"/>
+                            <constraint firstItem="sOJ-Wb-5XF" firstAttribute="top" secondItem="KZo-JM-h59" secondAttribute="bottom" id="UKF-qI-Mwv"/>
+                            <constraint firstItem="KZo-JM-h59" firstAttribute="top" secondItem="kLA-nL-34q" secondAttribute="top" id="X0p-Jz-n4M"/>
+                            <constraint firstItem="sOJ-Wb-5XF" firstAttribute="leading" secondItem="kLA-nL-34q" secondAttribute="leading" id="img-VC-cmq"/>
+                            <constraint firstItem="kLA-nL-34q" firstAttribute="bottom" secondItem="sOJ-Wb-5XF" secondAttribute="bottom" id="kr5-9h-761"/>
+                            <constraint firstItem="KZo-JM-h59" firstAttribute="trailing" secondItem="kLA-nL-34q" secondAttribute="trailing" id="v9z-E5-2OL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cartões" image="creditcard" catalog="system" id="uP5-dO-j79"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bodyTableView" destination="sOJ-Wb-5XF" id="dph-m7-ia4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1D-iU-3ZO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-153" y="257"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6um-I2-4JA">
+            <objects>
+                <tabBarController id="vVQ-A2-vn6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2eD-lh-uwb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemRedColor"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3W9-E4-CfW" kind="relationship" relationship="viewControllers" id="j7c-tK-iPV"/>
+                        <segue destination="nfj-7I-Rdd" kind="relationship" relationship="viewControllers" id="kj8-b0-gQl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7f3-K4-TWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="560"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="list.star" catalog="system" width="128" height="94"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

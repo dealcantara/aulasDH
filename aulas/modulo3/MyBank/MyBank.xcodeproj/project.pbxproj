@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544B86312551984400980162 /* cartoes.json in Resources */ = {isa = PBXBuildFile; fileRef = 544B86302551984400980162 /* cartoes.json */; };
+		544CEEB82554ADFA0044E15A /* CreditCardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CEEB72554ADFA0044E15A /* CreditCardWorker.swift */; };
+		544CEEBB2554B0130044E15A /* ExtratoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CEEBA2554B0130044E15A /* ExtratoWorker.swift */; };
+		544CEEBE2554B6FB0044E15A /* invoice.json in Resources */ = {isa = PBXBuildFile; fileRef = 544CEEBD2554B6FB0044E15A /* invoice.json */; };
+		544CEEC52554B89D0044E15A /* InvoiceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CEEC42554B89D0044E15A /* InvoiceWorker.swift */; };
+		544CEECF2554C01F0044E15A /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CEECE2554C01F0044E15A /* Invoice.swift */; };
+		544CEED22554C3A70044E15A /* InvoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544CEED12554C3A70044E15A /* InvoiceVC.swift */; };
+		54570E842551AF4700869EDE /* CreditCardCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54570E832551AF4700869EDE /* CreditCardCollectionCell.xib */; };
+		54C011B225520B1A00EC0E61 /* CreditCardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C011B125520B1A00EC0E61 /* CreditCardVM.swift */; };
+		54C011B62552152500EC0E61 /* despesas.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C011B52552152500EC0E61 /* despesas.json */; };
+		54C011B92552154500EC0E61 /* Movimentacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C011B82552154500EC0E61 /* Movimentacao.swift */; };
+		54C011BC255216EA00EC0E61 /* ExtratoVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C011BB255216EA00EC0E61 /* ExtratoVM.swift */; };
+		54C011BF2552196D00EC0E61 /* ExtratoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C011BE2552196D00EC0E61 /* ExtratoVC.swift */; };
+		54CE9B9E25522B4C00014789 /* ExtratoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE9B9D25522B4C00014789 /* ExtratoCell.swift */; };
+		54CE9BA125522B6A00014789 /* ExtratoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54CE9BA025522B6900014789 /* ExtratoCell.xib */; };
+		54D27921254B966500440E52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D27920254B966500440E52 /* AppDelegate.swift */; };
+		54D27923254B966500440E52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D27922254B966500440E52 /* SceneDelegate.swift */; };
+		54D27925254B966500440E52 /* CreditCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D27924254B966500440E52 /* CreditCardVC.swift */; };
+		54D27928254B966500440E52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D27926254B966500440E52 /* Main.storyboard */; };
+		54D2792A254B966700440E52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D27929254B966700440E52 /* Assets.xcassets */; };
+		54D2792D254B966700440E52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D2792B254B966700440E52 /* LaunchScreen.storyboard */; };
+		54D27948254B98EB00440E52 /* CreditCardContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D27946254B98EB00440E52 /* CreditCardContainerCell.swift */; };
+		54D27949254B98EB00440E52 /* CreditCardContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54D27947254B98EB00440E52 /* CreditCardContainerCell.xib */; };
+		54D2794D254B99A500440E52 /* Cartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D2794C254B99A500440E52 /* Cartoes.swift */; };
+		54D27951254B9C0800440E52 /* CreditCardCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D2794F254B9C0800440E52 /* CreditCardCollectionCell.swift */; };
+		54D9F1A72554D938009EFB5D /* InvoiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9F1A62554D938009EFB5D /* InvoiceVM.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		544B86302551984400980162 /* cartoes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cartoes.json; path = ../../../../../Downloads/MyBank/MyBank/cartoes.json; sourceTree = "<group>"; };
+		544CEEB72554ADFA0044E15A /* CreditCardWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardWorker.swift; sourceTree = "<group>"; };
+		544CEEBA2554B0130044E15A /* ExtratoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoWorker.swift; sourceTree = "<group>"; };
+		544CEEBD2554B6FB0044E15A /* invoice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invoice.json; sourceTree = "<group>"; };
+		544CEEC42554B89D0044E15A /* InvoiceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceWorker.swift; sourceTree = "<group>"; };
+		544CEECE2554C01F0044E15A /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		544CEED12554C3A70044E15A /* InvoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceVC.swift; sourceTree = "<group>"; };
+		54570E832551AF4700869EDE /* CreditCardCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreditCardCollectionCell.xib; sourceTree = "<group>"; };
+		54C011B125520B1A00EC0E61 /* CreditCardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardVM.swift; sourceTree = "<group>"; };
+		54C011B52552152500EC0E61 /* despesas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = despesas.json; sourceTree = "<group>"; };
+		54C011B82552154500EC0E61 /* Movimentacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimentacao.swift; sourceTree = "<group>"; };
+		54C011BB255216EA00EC0E61 /* ExtratoVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoVM.swift; sourceTree = "<group>"; };
+		54C011BE2552196D00EC0E61 /* ExtratoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoVC.swift; sourceTree = "<group>"; };
+		54CE9B9D25522B4C00014789 /* ExtratoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoCell.swift; sourceTree = "<group>"; };
+		54CE9BA025522B6900014789 /* ExtratoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtratoCell.xib; sourceTree = "<group>"; };
+		54D2791D254B966500440E52 /* MyBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D27920254B966500440E52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54D27922254B966500440E52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54D27924254B966500440E52 /* CreditCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardVC.swift; sourceTree = "<group>"; };
+		54D27927254B966500440E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54D27929254B966700440E52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54D2792C254B966700440E52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54D2792E254B966700440E52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D27946254B98EB00440E52 /* CreditCardContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardContainerCell.swift; sourceTree = "<group>"; };
+		54D27947254B98EB00440E52 /* CreditCardContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardContainerCell.xib; sourceTree = "<group>"; };
+		54D2794C254B99A500440E52 /* Cartoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cartoes.swift; sourceTree = "<group>"; };
+		54D2794F254B9C0800440E52 /* CreditCardCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollectionCell.swift; sourceTree = "<group>"; };
+		54D9F1A62554D938009EFB5D /* InvoiceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceVM.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54D2791A254B966500440E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		544CEEB62554ADD80044E15A /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				544CEEB72554ADFA0044E15A /* CreditCardWorker.swift */,
+				544CEEBA2554B0130044E15A /* ExtratoWorker.swift */,
+				544CEEC42554B89D0044E15A /* InvoiceWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		54C011B025520AD400EC0E61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54C011B125520B1A00EC0E61 /* CreditCardVM.swift */,
+				54C011BB255216EA00EC0E61 /* ExtratoVM.swift */,
+				54D9F1A62554D938009EFB5D /* InvoiceVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54CE9B97255225CD00014789 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54D2794C254B99A500440E52 /* Cartoes.swift */,
+				54C011B82552154500EC0E61 /* Movimentacao.swift */,
+				544CEECE2554C01F0044E15A /* Invoice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54D27914254B966500440E52 = {
+			isa = PBXGroup;
+			children = (
+				54D2791F254B966500440E52 /* MyBank */,
+				54D2791E254B966500440E52 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54D2791E254B966500440E52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54D2791D254B966500440E52 /* MyBank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54D2791F254B966500440E52 /* MyBank */ = {
+			isa = PBXGroup;
+			children = (
+				54CE9B97255225CD00014789 /* Model */,
+				544CEEB62554ADD80044E15A /* Worker */,
+				54C011B025520AD400EC0E61 /* ViewModel */,
+				54D27920254B966500440E52 /* AppDelegate.swift */,
+				54D27922254B966500440E52 /* SceneDelegate.swift */,
+				54D27924254B966500440E52 /* CreditCardVC.swift */,
+				54C011BE2552196D00EC0E61 /* ExtratoVC.swift */,
+				544CEED12554C3A70044E15A /* InvoiceVC.swift */,
+				54D27926254B966500440E52 /* Main.storyboard */,
+				54D27929254B966700440E52 /* Assets.xcassets */,
+				54D2792B254B966700440E52 /* LaunchScreen.storyboard */,
+				54D2792E254B966700440E52 /* Info.plist */,
+				54570E832551AF4700869EDE /* CreditCardCollectionCell.xib */,
+				54D2794F254B9C0800440E52 /* CreditCardCollectionCell.swift */,
+				54D27946254B98EB00440E52 /* CreditCardContainerCell.swift */,
+				54D27947254B98EB00440E52 /* CreditCardContainerCell.xib */,
+				54CE9B9D25522B4C00014789 /* ExtratoCell.swift */,
+				54CE9BA025522B6900014789 /* ExtratoCell.xib */,
+				544B86302551984400980162 /* cartoes.json */,
+				54C011B52552152500EC0E61 /* despesas.json */,
+				544CEEBD2554B6FB0044E15A /* invoice.json */,
+			);
+			path = MyBank;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54D2791C254B966500440E52 /* MyBank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D27931254B966700440E52 /* Build configuration list for PBXNativeTarget "MyBank" */;
+			buildPhases = (
+				54D27919254B966500440E52 /* Sources */,
+				54D2791A254B966500440E52 /* Frameworks */,
+				54D2791B254B966500440E52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyBank;
+			productName = MyBank;
+			productReference = 54D2791D254B966500440E52 /* MyBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54D27915254B966500440E52 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					54D2791C254B966500440E52 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 54D27918254B966500440E52 /* Build configuration list for PBXProject "MyBank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54D27914254B966500440E52;
+			productRefGroup = 54D2791E254B966500440E52 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54D2791C254B966500440E52 /* MyBank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54D2791B254B966500440E52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544CEEBE2554B6FB0044E15A /* invoice.json in Resources */,
+				54C011B62552152500EC0E61 /* despesas.json in Resources */,
+				54D2792D254B966700440E52 /* LaunchScreen.storyboard in Resources */,
+				54D2792A254B966700440E52 /* Assets.xcassets in Resources */,
+				544B86312551984400980162 /* cartoes.json in Resources */,
+				54570E842551AF4700869EDE /* CreditCardCollectionCell.xib in Resources */,
+				54D27928254B966500440E52 /* Main.storyboard in Resources */,
+				54D27949254B98EB00440E52 /* CreditCardContainerCell.xib in Resources */,
+				54CE9BA125522B6A00014789 /* ExtratoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54D27919254B966500440E52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544CEEB82554ADFA0044E15A /* CreditCardWorker.swift in Sources */,
+				54D27951254B9C0800440E52 /* CreditCardCollectionCell.swift in Sources */,
+				54C011B92552154500EC0E61 /* Movimentacao.swift in Sources */,
+				54CE9B9E25522B4C00014789 /* ExtratoCell.swift in Sources */,
+				54D27925254B966500440E52 /* CreditCardVC.swift in Sources */,
+				544CEECF2554C01F0044E15A /* Invoice.swift in Sources */,
+				544CEEC52554B89D0044E15A /* InvoiceWorker.swift in Sources */,
+				54C011B225520B1A00EC0E61 /* CreditCardVM.swift in Sources */,
+				544CEED22554C3A70044E15A /* InvoiceVC.swift in Sources */,
+				54C011BF2552196D00EC0E61 /* ExtratoVC.swift in Sources */,
+				544CEEBB2554B0130044E15A /* ExtratoWorker.swift in Sources */,
+				54D9F1A72554D938009EFB5D /* InvoiceVM.swift in Sources */,
+				54D27921254B966500440E52 /* AppDelegate.swift in Sources */,
+				54D2794D254B99A500440E52 /* Cartoes.swift in Sources */,
+				54D27948254B98EB00440E52 /* CreditCardContainerCell.swift in Sources */,
+				54D27923254B966500440E52 /* SceneDelegate.swift in Sources */,
+				54C011BC255216EA00EC0E61 /* ExtratoVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		54D27926254B966500440E52 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D27927254B966500440E52 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54D2792B254B966700440E52 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54D2792C254B966700440E52 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54D2792F254B966700440E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54D27930254B966700440E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54D27932254B966700440E52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = MyBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.MyBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D27933254B966700440E52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = MyBank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.MyBank";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54D27918254B966500440E52 /* Build configuration list for PBXProject "MyBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D2792F254B966700440E52 /* Debug */,
+				54D27930254B966700440E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D27931254B966700440E52 /* Build configuration list for PBXNativeTarget "MyBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D27932254B966700440E52 /* Debug */,
+				54D27933254B966700440E52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54D27915254B966500440E52 /* Project object */;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fjt-U3-OMv">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Credit CardVC-->
+        <scene sceneID="cta-Rc-7TZ">
+            <objects>
+                <viewController id="Fjt-U3-OMv" customClass="AddCreditCardVC" customModule="MyBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kMD-LT-3JP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8s-cy-JOf">
+                                <rect key="frame" x="20" y="84" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número do cartão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-Uj-pQf">
+                                <rect key="frame" x="20" y="148" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de validade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5d1-qM-h7O">
+                                <rect key="frame" x="20" y="212" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DmY-Rl-WTI">
+                                <rect key="frame" x="20" y="286" width="374" height="32"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <segments>
+                                    <segment title="Visa"/>
+                                    <segment title="Master"/>
+                                    <segment title="Elo"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-3N-hsr">
+                                <rect key="frame" x="20" y="367" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Foto">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFU-H4-Hsa">
+                                <rect key="frame" x="20" y="427" width="374" height="30"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TlY-OS-Kny"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="YFU-H4-Hsa" secondAttribute="trailing" constant="20" id="0Eb-pY-Ny0"/>
+                            <constraint firstItem="V8s-cy-JOf" firstAttribute="top" secondItem="TlY-OS-Kny" secondAttribute="top" constant="40" id="7Vx-x6-noe"/>
+                            <constraint firstItem="5d1-qM-h7O" firstAttribute="centerX" secondItem="TlY-OS-Kny" secondAttribute="centerX" id="AW7-Zs-6nj"/>
+                            <constraint firstItem="fLe-Uj-pQf" firstAttribute="centerX" secondItem="TlY-OS-Kny" secondAttribute="centerX" id="ChU-fA-yDz"/>
+                            <constraint firstItem="dJi-3N-hsr" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="GYG-0T-OXk"/>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="5d1-qM-h7O" secondAttribute="trailing" constant="20" id="NMT-fP-ttI"/>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="fLe-Uj-pQf" secondAttribute="trailing" constant="20" id="Neb-93-7o8"/>
+                            <constraint firstItem="fLe-Uj-pQf" firstAttribute="top" secondItem="V8s-cy-JOf" secondAttribute="bottom" constant="30" id="PXB-uq-GRB"/>
+                            <constraint firstItem="DmY-Rl-WTI" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="Pd3-LR-m9f"/>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="DmY-Rl-WTI" secondAttribute="trailing" constant="20" id="QbL-SX-pfi"/>
+                            <constraint firstItem="V8s-cy-JOf" firstAttribute="centerX" secondItem="TlY-OS-Kny" secondAttribute="centerX" id="Qez-35-aJ3"/>
+                            <constraint firstItem="dJi-3N-hsr" firstAttribute="top" secondItem="DmY-Rl-WTI" secondAttribute="bottom" constant="50" id="ThN-WW-zMH"/>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="dJi-3N-hsr" secondAttribute="trailing" constant="20" id="VwF-jT-5Lo"/>
+                            <constraint firstItem="TlY-OS-Kny" firstAttribute="trailing" secondItem="V8s-cy-JOf" secondAttribute="trailing" constant="20" id="Wga-GD-DTb"/>
+                            <constraint firstItem="dJi-3N-hsr" firstAttribute="centerX" secondItem="TlY-OS-Kny" secondAttribute="centerX" id="bvH-ch-sap"/>
+                            <constraint firstItem="5d1-qM-h7O" firstAttribute="top" secondItem="fLe-Uj-pQf" secondAttribute="bottom" constant="30" id="elY-YG-Wee"/>
+                            <constraint firstItem="DmY-Rl-WTI" firstAttribute="top" secondItem="5d1-qM-h7O" secondAttribute="bottom" constant="40" id="lg4-I1-gOR"/>
+                            <constraint firstItem="5d1-qM-h7O" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="mJQ-Nh-KAb"/>
+                            <constraint firstItem="V8s-cy-JOf" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="ppv-qq-mal"/>
+                            <constraint firstItem="YFU-H4-Hsa" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="yIz-Rq-dO7"/>
+                            <constraint firstItem="YFU-H4-Hsa" firstAttribute="top" secondItem="dJi-3N-hsr" secondAttribute="bottom" constant="30" id="z9P-AZ-crR"/>
+                            <constraint firstItem="fLe-Uj-pQf" firstAttribute="leading" secondItem="TlY-OS-Kny" secondAttribute="leading" constant="20" id="zbS-Fs-UWO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bandeiraSegmentedControl" destination="DmY-Rl-WTI" id="jMU-Iz-BS2"/>
+                        <outlet property="dataValidadeTextField" destination="5d1-qM-h7O" id="VAs-L3-yZw"/>
+                        <outlet property="fotoButton" destination="dJi-3N-hsr" id="UE8-nY-tAw"/>
+                        <outlet property="nomeTextField" destination="V8s-cy-JOf" id="Hts-g6-NMO"/>
+                        <outlet property="numeroCartaoTextField" destination="fLe-Uj-pQf" id="2jt-at-0Yt"/>
+                        <outlet property="salvarButton" destination="YFU-H4-Hsa" id="bGb-Vo-zmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLT-ky-HeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

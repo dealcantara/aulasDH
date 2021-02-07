@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54DCEB3825C0EB7100733A60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB3725C0EB7100733A60 /* AppDelegate.swift */; };
+		54DCEB3A25C0EB7100733A60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB3925C0EB7100733A60 /* SceneDelegate.swift */; };
+		54DCEB3C25C0EB7100733A60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB3B25C0EB7100733A60 /* ViewController.swift */; };
+		54DCEB3F25C0EB7100733A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DCEB3D25C0EB7100733A60 /* Main.storyboard */; };
+		54DCEB4125C0EB7200733A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DCEB4025C0EB7200733A60 /* Assets.xcassets */; };
+		54DCEB4425C0EB7200733A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DCEB4225C0EB7200733A60 /* LaunchScreen.storyboard */; };
+		54DCEB4F25C0EB7300733A60 /* carros_elderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB4E25C0EB7300733A60 /* carros_elderTests.swift */; };
+		54DCEB5A25C0EB7300733A60 /* carros_elderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB5925C0EB7300733A60 /* carros_elderUITests.swift */; };
+		54DCEB6B25C0EBAA00733A60 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB6A25C0EBAA00733A60 /* Car.swift */; };
+		54DCEB6C25C0EBAA00733A60 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB6A25C0EBAA00733A60 /* Car.swift */; };
+		54DCEB6D25C0EBAA00733A60 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB6A25C0EBAA00733A60 /* Car.swift */; };
+		54DCEB7225C0EBD600733A60 /* CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCEB7125C0EBD600733A60 /* CarTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54DCEB4B25C0EB7300733A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DCEB2C25C0EB7100733A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DCEB3325C0EB7100733A60;
+			remoteInfo = "carros-elder";
+		};
+		54DCEB5625C0EB7300733A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54DCEB2C25C0EB7100733A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DCEB3325C0EB7100733A60;
+			remoteInfo = "carros-elder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54DCEB3425C0EB7100733A60 /* carros-elder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "carros-elder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DCEB3725C0EB7100733A60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54DCEB3925C0EB7100733A60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		54DCEB3B25C0EB7100733A60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54DCEB3E25C0EB7100733A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54DCEB4025C0EB7200733A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54DCEB4325C0EB7200733A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54DCEB4525C0EB7200733A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DCEB4A25C0EB7300733A60 /* carros-elderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "carros-elderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DCEB4E25C0EB7300733A60 /* carros_elderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carros_elderTests.swift; sourceTree = "<group>"; };
+		54DCEB5025C0EB7300733A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DCEB5525C0EB7300733A60 /* carros-elderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "carros-elderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DCEB5925C0EB7300733A60 /* carros_elderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carros_elderUITests.swift; sourceTree = "<group>"; };
+		54DCEB5B25C0EB7300733A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DCEB6A25C0EBAA00733A60 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		54DCEB7125C0EBD600733A60 /* CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54DCEB3125C0EB7100733A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB4725C0EB7300733A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB5225C0EB7300733A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54DCEB2B25C0EB7100733A60 = {
+			isa = PBXGroup;
+			children = (
+				54DCEB3625C0EB7100733A60 /* carros-elder */,
+				54DCEB4D25C0EB7300733A60 /* carros-elderTests */,
+				54DCEB5825C0EB7300733A60 /* carros-elderUITests */,
+				54DCEB3525C0EB7100733A60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54DCEB3525C0EB7100733A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54DCEB3425C0EB7100733A60 /* carros-elder.app */,
+				54DCEB4A25C0EB7300733A60 /* carros-elderTests.xctest */,
+				54DCEB5525C0EB7300733A60 /* carros-elderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54DCEB3625C0EB7100733A60 /* carros-elder */ = {
+			isa = PBXGroup;
+			children = (
+				54DCEB6A25C0EBAA00733A60 /* Car.swift */,
+				54DCEB3725C0EB7100733A60 /* AppDelegate.swift */,
+				54DCEB3925C0EB7100733A60 /* SceneDelegate.swift */,
+				54DCEB3B25C0EB7100733A60 /* ViewController.swift */,
+				54DCEB3D25C0EB7100733A60 /* Main.storyboard */,
+				54DCEB4025C0EB7200733A60 /* Assets.xcassets */,
+				54DCEB4225C0EB7200733A60 /* LaunchScreen.storyboard */,
+				54DCEB4525C0EB7200733A60 /* Info.plist */,
+			);
+			path = "carros-elder";
+			sourceTree = "<group>";
+		};
+		54DCEB4D25C0EB7300733A60 /* carros-elderTests */ = {
+			isa = PBXGroup;
+			children = (
+				54DCEB4E25C0EB7300733A60 /* carros_elderTests.swift */,
+				54DCEB5025C0EB7300733A60 /* Info.plist */,
+				54DCEB7125C0EBD600733A60 /* CarTests.swift */,
+			);
+			path = "carros-elderTests";
+			sourceTree = "<group>";
+		};
+		54DCEB5825C0EB7300733A60 /* carros-elderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				54DCEB5925C0EB7300733A60 /* carros_elderUITests.swift */,
+				54DCEB5B25C0EB7300733A60 /* Info.plist */,
+			);
+			path = "carros-elderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54DCEB3325C0EB7100733A60 /* carros-elder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DCEB5E25C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elder" */;
+			buildPhases = (
+				54DCEB3025C0EB7100733A60 /* Sources */,
+				54DCEB3125C0EB7100733A60 /* Frameworks */,
+				54DCEB3225C0EB7100733A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "carros-elder";
+			productName = "carros-elder";
+			productReference = 54DCEB3425C0EB7100733A60 /* carros-elder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54DCEB4925C0EB7300733A60 /* carros-elderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DCEB6125C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elderTests" */;
+			buildPhases = (
+				54DCEB4625C0EB7300733A60 /* Sources */,
+				54DCEB4725C0EB7300733A60 /* Frameworks */,
+				54DCEB4825C0EB7300733A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DCEB4C25C0EB7300733A60 /* PBXTargetDependency */,
+			);
+			name = "carros-elderTests";
+			productName = "carros-elderTests";
+			productReference = 54DCEB4A25C0EB7300733A60 /* carros-elderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54DCEB5425C0EB7300733A60 /* carros-elderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DCEB6425C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elderUITests" */;
+			buildPhases = (
+				54DCEB5125C0EB7300733A60 /* Sources */,
+				54DCEB5225C0EB7300733A60 /* Frameworks */,
+				54DCEB5325C0EB7300733A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54DCEB5725C0EB7300733A60 /* PBXTargetDependency */,
+			);
+			name = "carros-elderUITests";
+			productName = "carros-elderUITests";
+			productReference = 54DCEB5525C0EB7300733A60 /* carros-elderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54DCEB2C25C0EB7100733A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					54DCEB3325C0EB7100733A60 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					54DCEB4925C0EB7300733A60 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 54DCEB3325C0EB7100733A60;
+					};
+					54DCEB5425C0EB7300733A60 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 54DCEB3325C0EB7100733A60;
+					};
+				};
+			};
+			buildConfigurationList = 54DCEB2F25C0EB7100733A60 /* Build configuration list for PBXProject "carros-elder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54DCEB2B25C0EB7100733A60;
+			productRefGroup = 54DCEB3525C0EB7100733A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54DCEB3325C0EB7100733A60 /* carros-elder */,
+				54DCEB4925C0EB7300733A60 /* carros-elderTests */,
+				54DCEB5425C0EB7300733A60 /* carros-elderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54DCEB3225C0EB7100733A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DCEB4425C0EB7200733A60 /* LaunchScreen.storyboard in Resources */,
+				54DCEB4125C0EB7200733A60 /* Assets.xcassets in Resources */,
+				54DCEB3F25C0EB7100733A60 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB4825C0EB7300733A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB5325C0EB7300733A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54DCEB3025C0EB7100733A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DCEB3C25C0EB7100733A60 /* ViewController.swift in Sources */,
+				54DCEB3825C0EB7100733A60 /* AppDelegate.swift in Sources */,
+				54DCEB6B25C0EBAA00733A60 /* Car.swift in Sources */,
+				54DCEB3A25C0EB7100733A60 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB4625C0EB7300733A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DCEB7225C0EBD600733A60 /* CarTests.swift in Sources */,
+				54DCEB6C25C0EBAA00733A60 /* Car.swift in Sources */,
+				54DCEB4F25C0EB7300733A60 /* carros_elderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DCEB5125C0EB7300733A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DCEB6D25C0EBAA00733A60 /* Car.swift in Sources */,
+				54DCEB5A25C0EB7300733A60 /* carros_elderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54DCEB4C25C0EB7300733A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DCEB3325C0EB7100733A60 /* carros-elder */;
+			targetProxy = 54DCEB4B25C0EB7300733A60 /* PBXContainerItemProxy */;
+		};
+		54DCEB5725C0EB7300733A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DCEB3325C0EB7100733A60 /* carros-elder */;
+			targetProxy = 54DCEB5625C0EB7300733A60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54DCEB3D25C0EB7100733A60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DCEB3E25C0EB7100733A60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54DCEB4225C0EB7200733A60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54DCEB4325C0EB7200733A60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54DCEB5C25C0EB7300733A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54DCEB5D25C0EB7300733A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54DCEB5F25C0EB7300733A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54DCEB6025C0EB7300733A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		54DCEB6225C0EB7300733A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carros-elder.app/carros-elder";
+			};
+			name = Debug;
+		};
+		54DCEB6325C0EB7300733A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elderTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carros-elder.app/carros-elder";
+			};
+			name = Release;
+		};
+		54DCEB6525C0EB7300733A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "carros-elder";
+			};
+			name = Debug;
+		};
+		54DCEB6625C0EB7300733A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6HWDL548KP;
+				INFOPLIST_FILE = "carros-elderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Digital-House.carros-elderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "carros-elder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54DCEB2F25C0EB7100733A60 /* Build configuration list for PBXProject "carros-elder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DCEB5C25C0EB7300733A60 /* Debug */,
+				54DCEB5D25C0EB7300733A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DCEB5E25C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DCEB5F25C0EB7300733A60 /* Debug */,
+				54DCEB6025C0EB7300733A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DCEB6125C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DCEB6225C0EB7300733A60 /* Debug */,
+				54DCEB6325C0EB7300733A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DCEB6425C0EB7300733A60 /* Build configuration list for PBXNativeTarget "carros-elderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DCEB6525C0EB7300733A60 /* Debug */,
+				54DCEB6625C0EB7300733A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54DCEB2C25C0EB7100733A60 /* Project object */;
+}

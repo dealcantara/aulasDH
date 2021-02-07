@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddCardCollectionCell" id="gTV-IL-0wX" customClass="AddCardCollectionCell" customModule="MyBank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8w-59-PkJ">
+                        <rect key="frame" x="0.0" y="35" width="250" height="2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="Rp3-c5-zZH"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SpO-To-ZpA">
+                        <rect key="frame" x="30" y="68.5" width="190" height="99.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-Eu-hpg">
+                        <rect key="frame" x="250" y="0.0" width="70" height="200"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="II6-8u-cTO"/>
+                            <constraint firstAttribute="width" constant="70" id="tL3-k6-sXM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
+                        <state key="normal" title="+">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="tappedButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Jfr-cB-UOX"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGrayColor"/>
+            <constraints>
+                <constraint firstItem="SpO-To-ZpA" firstAttribute="top" secondItem="I8w-59-PkJ" secondAttribute="bottom" constant="30" id="7Bf-f0-5Vn"/>
+                <constraint firstItem="SpO-To-ZpA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="AHj-kh-JnK"/>
+                <constraint firstItem="I8w-59-PkJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="GTn-ex-X4w"/>
+                <constraint firstItem="bd0-Eu-hpg" firstAttribute="leading" secondItem="SpO-To-ZpA" secondAttribute="trailing" constant="30" id="Hqw-fW-1ar"/>
+                <constraint firstAttribute="bottom" secondItem="SpO-To-ZpA" secondAttribute="bottom" constant="30" id="JBU-zg-V5t"/>
+                <constraint firstItem="bd0-Eu-hpg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="SXY-oN-tnT"/>
+                <constraint firstAttribute="trailing" secondItem="bd0-Eu-hpg" secondAttribute="trailing" id="Ziu-wq-PUL"/>
+                <constraint firstAttribute="bottom" secondItem="bd0-Eu-hpg" secondAttribute="bottom" id="gH4-5s-nM7"/>
+                <constraint firstItem="I8w-59-PkJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mtK-Gl-XLa"/>
+                <constraint firstAttribute="trailing" secondItem="I8w-59-PkJ" secondAttribute="trailing" constant="70" id="qBW-4Q-Iuv"/>
+            </constraints>
+            <connections>
+                <outlet property="addButton" destination="bd0-Eu-hpg" id="RI8-y2-rmi"/>
+            </connections>
+            <point key="canvasLocation" x="8.6956521739130448" y="50.892857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
